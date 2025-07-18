@@ -5,15 +5,15 @@
 class Loex < Formula
   desc "Loex: Local Execution Manager CLI"
   homepage "https://github.com/kjunh972/loex"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     on_intel do
-      url "https://github.com/kjunh972/loex/releases/download/v1.0.0/loex-1.0.0-darwin-amd64.tar.gz"
-      sha256 "26d8858c853c5785c881109e8b7a058e031c270d6ef3885366ce6896da208e00"
+      url "https://github.com/kjunh972/loex/releases/download/v1.1.0/loex-1.1.0-darwin-amd64.tar.gz"
+      sha256 "c9a9de9335c1680403d2e0d615d71e2a54bd39bf42dd4ecd1b77fbdb42a97af9"
 
       def install
         bin.install "loex"
@@ -23,8 +23,8 @@ class Loex < Formula
       end
     end
     on_arm do
-      url "https://github.com/kjunh972/loex/releases/download/v1.0.0/loex-1.0.0-darwin-arm64.tar.gz"
-      sha256 "c43bb239063b7c384430bb9e307d55e92f061bc26a15605cf8142f7058384669"
+      url "https://github.com/kjunh972/loex/releases/download/v1.1.0/loex-1.1.0-darwin-arm64.tar.gz"
+      sha256 "c7684bad13f45515cf9aaa354867b997521ba940b5c4b39f5386a3a42bc03573"
 
       def install
         bin.install "loex"
@@ -38,8 +38,8 @@ class Loex < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjunh972/loex/releases/download/v1.0.0/loex-1.0.0-linux-amd64.tar.gz"
-        sha256 "fd3693ad3770a9d43fde3b6bdffc1bdaee5dc2286f82a7bbe1879e76058e8cca"
+        url "https://github.com/kjunh972/loex/releases/download/v1.1.0/loex-1.1.0-linux-amd64.tar.gz"
+        sha256 "592fd13199c6f53296ebc440c146b395ff058a185c30d49335b31574962a69f5"
 
         def install
           bin.install "loex"
@@ -51,8 +51,8 @@ class Loex < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjunh972/loex/releases/download/v1.0.0/loex-1.0.0-linux-arm64.tar.gz"
-        sha256 "89cfa0aa5cc0c836921ad6d901bbfc942b397d1dfa314f3b486356f64b22fd9c"
+        url "https://github.com/kjunh972/loex/releases/download/v1.1.0/loex-1.1.0-linux-arm64.tar.gz"
+        sha256 "57cd1feb36b85bd31bacafc78e020cd956dfd500f3ff08dff487634d39fb0178"
 
         def install
           bin.install "loex"
